@@ -10,7 +10,7 @@
         $count = mysqli_num_rows($result);  
         
         if($count == 1){  
-            header("Location: view.php");
+            header("Location: view  .php");
         }  
         else{  
             echo  '<script>
