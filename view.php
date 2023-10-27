@@ -1,6 +1,6 @@
 <?php 
 
-include "config.php";
+include "./php/config.php";
 
 $sql = "SELECT * FROM users";
 
@@ -14,7 +14,7 @@ $result = $conn->query($sql);
 
 <head>
 
-    <title>View Page</title>
+    <title>View Pages</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -28,7 +28,14 @@ $result = $conn->query($sql);
         <form action="index.php" method="post">
             <input type="submit" value="Logout" name="update">
         </form>
+        <form action="update.php" method="post">
+            <input type="submit" value="Edit" name="update">
+        </form>
+            
+
        
+       
+        
 <table class="table">
 
     <thead>
